@@ -1,0 +1,116 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.main-card {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  background-color: rgba(15, 23, 42, 0.5);
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active {
+  color: white;
+  background-color: var(--accent-primary);
+  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.result-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: rgba(15, 23, 42, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.result-container h3 {
+  margin-bottom: 1rem;
+  color: var(--text-accent);
+}
+
+.metrics {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.metric-item {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+}

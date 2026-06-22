@@ -1,0 +1,5 @@
+cryptography
+Pillow
+Flask
+Flask-Cors
+pytest
