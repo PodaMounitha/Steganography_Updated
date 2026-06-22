@@ -35,9 +35,9 @@ export const extractFile = async (image, password) => {
 };
 
 export const getDownloadUrl = (filename) => {
-  // Extract filename from "outputs/hidden.png" if necessary
-  const name = filename.split('/').pop() || filename.split('\\').pop();
-  return `${API_BASE_URL}/download/${name}`;
+  // Normalize path separators and extract the base filename
+  const name = filename.replace(/\\/g, '/').split('/').pop();
+  return `${API_BASE_URL}/download/${encodeURIComponent(name)}`;
 };
 
 export default api;
