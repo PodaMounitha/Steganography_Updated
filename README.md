@@ -103,13 +103,13 @@ StealthVault/
 ### Pull the Docker Image
 
 ```bash
-docker pull <your-dockerhub-username>/stealthvault:latest
+docker pull podamounitha/stealthvault:latest
 ```
 
 ### Run the Container
 
 ```bash
-docker run -p 5000:5000 <your-dockerhub-username>/stealthvault:latest
+docker run -p 5000:5000 podamounitha/stealthvault:latest
 ```
 
 Open your browser:
